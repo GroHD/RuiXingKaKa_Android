@@ -1,5 +1,6 @@
 package com.example.rocket;
 
+import java.lang.reflect.Field;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -31,6 +32,7 @@ public class KaKaService extends Service {
 	private WindowManager mWm;
 	private View mToast;
 	private ImageView iv;
+	private AnimationDrawable anim;
 	// 双击的第一次点击时间
 	float startTime = 0;
 	// 随机的动作{第一个参数是 要执行那个动画文件，第二个是动画文件一共有多少张}
@@ -44,12 +46,11 @@ public class KaKaService extends Service {
 
 		public void handleMessage(android.os.Message msg) {
 			iv.setBackgroundResource(msg.what);
-			SystemClock.sleep(10);
-			AnimationDrawable anim = (AnimationDrawable) iv.getBackground();
-		
+			SystemClock.sleep(100);
+			anim = (AnimationDrawable) iv.getBackground();
 			anim.start();
-
 			mWm.updateViewLayout(mToast, mParams);
+		
 		};
 	};
 
@@ -80,14 +81,8 @@ public class KaKaService extends Service {
 		iv = mToast.findViewById(R.id.iv_kaka_item_list);
 
 		handler.sendEmptyMessage(R.drawable.kaka_smog_item_list);
-		new Thread() {
-			public void run() {
-				SystemClock.sleep(2830);
-				handler.sendEmptyMessage(R.drawable.kaka_stand_item_list);
-
-			};
-
-		}.start();
+		//执行完上面的动画切回首页动画
+		IsStopDrawable();
 
 		// 拖动动画
 		iv.setOnTouchListener(new OnTouchListener() {
@@ -149,14 +144,8 @@ public class KaKaService extends Service {
 						SystemClock.sleep(10);
 						startTime = 0;
 						handler.sendEmptyMessage(R.drawable.kaka_dblclk_item_list);
-						new Thread() {
-							public void run() {
-
-								SystemClock.sleep(1080);
-								handler.sendEmptyMessage(R.drawable.kaka_stand_item_list);
-							};
-
-						}.start();
+						//执行完上面的动画切回首页动画
+						IsStopDrawable();
 
 					}
 					startTime = 0;
@@ -179,15 +168,8 @@ public class KaKaService extends Service {
 				handler.sendEmptyMessage(actionArr[0]);
 
 				Log.i("actionLength", "" + actionLength);
-				new Thread() {
-					@Override
-					public void run() {
-						SystemClock.sleep(actionLength*90);
-						handler.sendEmptyMessage(R.drawable.kaka_stand_item_list);
-					}
-					
-				}.start();
-				
+				//判断动画之后到最后一帧的时候切换回stand动画
+				IsStopDrawable();
 
 			}
 		};
@@ -207,16 +189,63 @@ public class KaKaService extends Service {
 			}
 			// 隐藏
 			handler.sendEmptyMessage(R.drawable.kaka_vanish_item_list);
+			SystemClock.sleep(100);
+			//判断线程是否执行到最后一张，如果是则执行后面的动画
 			new Thread() {
+				@Override
 				public void run() {
+					while (true) {
+						try {
+							Field field = AnimationDrawable.class.getDeclaredField("mCurFrame");
+							field.setAccessible(true);
+							int curFrame = field.getInt(anim);// 获取anim动画的当前帧
+							if (curFrame == anim.getNumberOfFrames() - 1)// 如果已经到了最后一帧
+							{
+								mWm.removeView(mToast);
+								
+								return;
+							}
 
-					SystemClock.sleep(2000);
-					mWm.removeView(mToast);
-				};
+						} catch (Exception ex) {
+							ex.printStackTrace();
+						}
+						SystemClock.sleep(100);
+					}
+				}
 
 			}.start();
-
+		
 		}
+	}
+
+	/**
+	 * 判断是否执行完毕动画，执行完毕之后设置动画为坐下的动画
+	 */
+	public  void IsStopDrawable() {
+		//判断线程是否执行到最后一张，如果是则执行后面的动画
+		new Thread() {
+			@Override
+			public void run() {
+				while (true) {
+					try {
+						Field field = AnimationDrawable.class.getDeclaredField("mCurFrame");
+						field.setAccessible(true);
+						int curFrame = field.getInt(anim);// 获取anim动画的当前帧
+						if (curFrame == anim.getNumberOfFrames() - 1)// 如果已经到了最后一帧
+						{
+							handler.sendEmptyMessage(R.drawable.kaka_stand_item_list);
+							
+							return;
+						}
+
+					} catch (Exception ex) {
+						ex.printStackTrace();
+					}
+					SystemClock.sleep(10);
+				}
+			}
+
+		}.start();
 	}
 
 }
