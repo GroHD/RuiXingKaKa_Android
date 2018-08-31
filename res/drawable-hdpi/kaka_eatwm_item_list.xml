@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+     >
+	<item android:drawable="@drawable/eatwm_1" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_2" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_3" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_4" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_5" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_6" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_7" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_8" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_9" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_10" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_11" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_12" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_13" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_14" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_15" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_16" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_17" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_18" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_19" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_20" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_21" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_22" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_23" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_24" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_25" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_26" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_27" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_28" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_29" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_30" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_31" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_32" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_33" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_34" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_35" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_36" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_37" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_38" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_39" android:duration="90"/>
+	<item android:drawable="@drawable/eatwm_40" android:duration="90"/>
+	
+	
+</animation-list>
