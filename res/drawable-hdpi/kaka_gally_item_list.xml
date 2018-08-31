@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+     >
+	<item android:drawable="@drawable/gally_1" android:duration="90"/>
+	<item android:drawable="@drawable/gally_2" android:duration="90"/>
+	<item android:drawable="@drawable/gally_3" android:duration="90"/>
+	<item android:drawable="@drawable/gally_4" android:duration="90"/>
+	<item android:drawable="@drawable/gally_5" android:duration="90"/>
+	<item android:drawable="@drawable/gally_6" android:duration="90"/>
+	<item android:drawable="@drawable/gally_7" android:duration="90"/>
+	<item android:drawable="@drawable/gally_8" android:duration="90"/>
+	<item android:drawable="@drawable/gally_9" android:duration="90"/>
+	<item android:drawable="@drawable/gally_10" android:duration="90"/>
+	
+	<item android:drawable="@drawable/gally_11" android:duration="90"/>
+	<item android:drawable="@drawable/gally_12" android:duration="90"/>
+	<item android:drawable="@drawable/gally_13" android:duration="90"/>
+	<item android:drawable="@drawable/gally_14" android:duration="90"/>
+	<item android:drawable="@drawable/gally_15" android:duration="90"/>
+	<item android:drawable="@drawable/gally_16" android:duration="90"/>
+	<item android:drawable="@drawable/gally_17" android:duration="90"/>
+	<item android:drawable="@drawable/gally_18" android:duration="90"/>
+	<item android:drawable="@drawable/gally_19" android:duration="90"/>
+	<item android:drawable="@drawable/gally_20" android:duration="90"/>
+	
+	<item android:drawable="@drawable/gally_21" android:duration="90"/>
+	<item android:drawable="@drawable/gally_22" android:duration="90"/>
+	<item android:drawable="@drawable/gally_23" android:duration="90"/>
+	<item android:drawable="@drawable/gally_24" android:duration="90"/>
+	<item android:drawable="@drawable/gally_25" android:duration="90"/>
+	<item android:drawable="@drawable/gally_26" android:duration="90"/>
+	<item android:drawable="@drawable/gally_27" android:duration="90"/>
+	<item android:drawable="@drawable/gally_28" android:duration="90"/>
+	<item android:drawable="@drawable/gally_29" android:duration="90"/>
+	<item android:drawable="@drawable/gally_30" android:duration="90"/>
+	
+	<item android:drawable="@drawable/gally_31" android:duration="90"/>
+	<item android:drawable="@drawable/gally_32" android:duration="90"/>
+	<item android:drawable="@drawable/gally_33" android:duration="90"/>
+	<item android:drawable="@drawable/gally_34" android:duration="90"/>
+	<item android:drawable="@drawable/gally_35" android:duration="90"/>
+	<item android:drawable="@drawable/gally_36" android:duration="90"/>
+	<item android:drawable="@drawable/gally_37" android:duration="90"/>
+	<item android:drawable="@drawable/gally_38" android:duration="90"/>
+	<item android:drawable="@drawable/gally_39" android:duration="90"/>
+	
+</animation-list>

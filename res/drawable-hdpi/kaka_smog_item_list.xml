@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+     >
+	<item android:drawable="@drawable/smog_1" android:duration="90"/>
+	<item android:drawable="@drawable/smog_2" android:duration="90"/>
+	<item android:drawable="@drawable/smog_3" android:duration="90"/>
+	<item android:drawable="@drawable/smog_4" android:duration="90"/>
+	<item android:drawable="@drawable/smog_5" android:duration="90"/>
+	<item android:drawable="@drawable/smog_6" android:duration="90"/>
+	<item android:drawable="@drawable/smog_7" android:duration="90"/>
+	<item android:drawable="@drawable/smog_8" android:duration="90"/>
+	<item android:drawable="@drawable/smog_9" android:duration="90"/>
+	<item android:drawable="@drawable/smog_10" android:duration="90"/>
+	<item android:drawable="@drawable/smog_11" android:duration="90"/>
+	<item android:drawable="@drawable/smog_12" android:duration="90"/>
+	<item android:drawable="@drawable/smog_13" android:duration="90"/>
+	<item android:drawable="@drawable/smog_14" android:duration="90"/>
+	<item android:drawable="@drawable/smog_15" android:duration="90"/>
+	<item android:drawable="@drawable/smog_16" android:duration="90"/>
+	<item android:drawable="@drawable/smog_17" android:duration="90"/>
+	<item android:drawable="@drawable/smog_18" android:duration="90"/>
+</animation-list>

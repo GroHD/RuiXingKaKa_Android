@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+   
+    >
+     	<item android:drawable="@drawable/stand_1" android:duration="90"/>
+		<item android:drawable="@drawable/stand_2" android:duration="90"/>
+		<item android:drawable="@drawable/stand_3" android:duration="90"/>
+		<item android:drawable="@drawable/stand_4" android:duration="90"/>
+		<item android:drawable="@drawable/stand_5" android:duration="90"/>
+		<item android:drawable="@drawable/stand_6" android:duration="90"/>
+		<item android:drawable="@drawable/stand_7" android:duration="90"/>
+		<item android:drawable="@drawable/stand_8" android:duration="90"/>
+		<item android:drawable="@drawable/stand_9" android:duration="90"/>
+		<item android:drawable="@drawable/stand_10" android:duration="90"/>
+		<item android:drawable="@drawable/stand_11" android:duration="90"/>
+		<item android:drawable="@drawable/stand_12" android:duration="90"/>
+		<item android:drawable="@drawable/stand_13" android:duration="90"/>
+		<item android:drawable="@drawable/stand_14" android:duration="90"/>
+		<item android:drawable="@drawable/stand_15" android:duration="90"/>
+		<item android:drawable="@drawable/stand_16" android:duration="90"/>
+		<item android:drawable="@drawable/stand_17" android:duration="90"/>
+		<item android:drawable="@drawable/stand_18" android:duration="90"/>
+		<item android:drawable="@drawable/stand_19" android:duration="90"/>
+		<item android:drawable="@drawable/stand_20" android:duration="90"/>
+		<item android:drawable="@drawable/stand_21" android:duration="90"/>
+		<item android:drawable="@drawable/stand_22" android:duration="90"/>
+		<item android:drawable="@drawable/stand_23" android:duration="90"/>
+		<item android:drawable="@drawable/stand_24" android:duration="90"/>
+		<item android:drawable="@drawable/stand_25" android:duration="90"/>
+		<item android:drawable="@drawable/stand_26" android:duration="90"/>
+		<item android:drawable="@drawable/stand_27" android:duration="90"/>
+		<item android:drawable="@drawable/stand_28" android:duration="90"/>
+		<item android:drawable="@drawable/stand_29" android:duration="90"/>
+		<item android:drawable="@drawable/stand_30" android:duration="90"/>
+		<item android:drawable="@drawable/stand_31" android:duration="90"/>
+		<item android:drawable="@drawable/stand_32" android:duration="90"/>
+		<item android:drawable="@drawable/stand_33" android:duration="90"/>
+		<item android:drawable="@drawable/stand_34" android:duration="90"/>
+		<item android:drawable="@drawable/stand_35" android:duration="90"/>
+		<item android:drawable="@drawable/stand_36" android:duration="90"/>
+		<item android:drawable="@drawable/stand_37" android:duration="90"/>
+		<item android:drawable="@drawable/stand_38" android:duration="90"/>
+		<item android:drawable="@drawable/stand_39" android:duration="90"/>
+</animation-list>

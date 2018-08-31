@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+     >
+	<item android:drawable="@drawable/stafindv_1" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_2" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_3" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_4" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_5" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_6" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_7" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_8" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_9" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_10" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_11" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_12" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_13" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_14" android:duration="90"/>
+	<item android:drawable="@drawable/stafindv_15" android:duration="90"/>
+	<item android:drawable="@drawable/findv_1" android:duration="90"/>
+	<item android:drawable="@drawable/findv_2" android:duration="90"/>
+	<item android:drawable="@drawable/findv_3" android:duration="90"/>
+	<item android:drawable="@drawable/findv_4" android:duration="90"/>
+	<item android:drawable="@drawable/findv_5" android:duration="90"/>
+	<item android:drawable="@drawable/findv_6" android:duration="90"/>
+	<item android:drawable="@drawable/findv_7" android:duration="90"/>
+	<item android:drawable="@drawable/findv_8" android:duration="90"/>
+	<item android:drawable="@drawable/findv_9" android:duration="90"/>
+	<item android:drawable="@drawable/findv_10" android:duration="90"/>
+	<item android:drawable="@drawable/findv_11" android:duration="90"/>
+	<item android:drawable="@drawable/findv_12" android:duration="90"/>
+	<item android:drawable="@drawable/findv_13" android:duration="90"/>
+	<item android:drawable="@drawable/findv_14" android:duration="90"/>
+	<item android:drawable="@drawable/findv_15" android:duration="90"/>
+	<item android:drawable="@drawable/findv_16" android:duration="90"/>
+	<item android:drawable="@drawable/findv_17" android:duration="90"/>
+	<item android:drawable="@drawable/findv_18" android:duration="90"/>
+	<item android:drawable="@drawable/findv_19" android:duration="90"/>
+	<item android:drawable="@drawable/findv_20" android:duration="90"/>
+	<item android:drawable="@drawable/findv_21" android:duration="90"/>
+	<item android:drawable="@drawable/findv_22" android:duration="90"/>
+	<item android:drawable="@drawable/findv_23" android:duration="90"/>
+	<item android:drawable="@drawable/findv_24" android:duration="90"/>
+	<item android:drawable="@drawable/findv_25" android:duration="90"/>
+	<item android:drawable="@drawable/findv_26" android:duration="90"/>
+	<item android:drawable="@drawable/findv_27" android:duration="90"/>
+	<item android:drawable="@drawable/findv_28" android:duration="90"/>
+	<item android:drawable="@drawable/findv_29" android:duration="90"/>
+	<item android:drawable="@drawable/findv_30" android:duration="90"/>
+	<item android:drawable="@drawable/findv_31" android:duration="90"/>
+	<item android:drawable="@drawable/findv_32" android:duration="90"/>
+	<item android:drawable="@drawable/findv_33" android:duration="90"/>
+	<item android:drawable="@drawable/findv_34" android:duration="90"/>
+	<item android:drawable="@drawable/findv_35" android:duration="90"/>
+	<item android:drawable="@drawable/findv_36" android:duration="90"/>
+	<item android:drawable="@drawable/findv_37" android:duration="90"/>
+	<item android:drawable="@drawable/findv_38" android:duration="90"/>
+	<item android:drawable="@drawable/findv_39" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_1" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_2" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_3" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_4" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_5" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_6" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_7" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_8" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_9" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_10" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_11" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_12" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_13" android:duration="90"/>
+	<item android:drawable="@drawable/stofindv_14" android:duration="90"/>
+	
+	
+	
+	
+</animation-list>
