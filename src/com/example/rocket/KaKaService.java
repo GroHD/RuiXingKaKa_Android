@@ -35,9 +35,9 @@ public class KaKaService extends Service {
 	private AnimationDrawable anim;
 	// 双击的第一次点击时间
 	float startTime = 0;
-	// 随机的动作{第一个参数是 要执行那个动画文件，第二个是动画文件一共有多少张}
-	private int[][] kakaActionArray = { { R.drawable.kaka_findv_item_list, 68 },
-			{ R.drawable.kaka_deletef_item_list, 40 }, { R.drawable.kaka_gally_item_list, 39 } };
+	// 随机的动作
+	private int[] kakaActionArray = {R.drawable.kaka_findv_item_list,
+			 R.drawable.kaka_deletef_item_list,  R.drawable.kaka_gally_item_list,R.drawable.kaka_eatwm_item_list };
 	// 定时任务
 	private Timer timer = null;
 	private TimerTask task = null;
@@ -163,13 +163,13 @@ public class KaKaService extends Service {
 				int actionSize = kakaActionArray.length;
 				Random rd = new Random();
 				int rdInt = rd.nextInt(actionSize);
-				int[] actionArr = kakaActionArray[rdInt];
-				final int actionLength = actionArr[1];
-				handler.sendEmptyMessage(actionArr[0]);
+				int action = kakaActionArray[rdInt];
+				handler.sendEmptyMessage(action);
 
-				Log.i("actionLength", "" + actionLength);
 				//判断动画之后到最后一帧的时候切换回stand动画
 				IsStopDrawable();
+				
+				System.gc();
 
 			}
 		};
