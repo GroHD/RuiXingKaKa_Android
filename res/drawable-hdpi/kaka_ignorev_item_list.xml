@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+     >
+	<item android:drawable="@drawable/ignorev_1" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_2" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_3" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_4" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_5" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_6" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_7" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_8" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_9" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_10" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_11" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_12" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_13" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_14" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_15" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_16" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_17" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_18" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_19" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_20" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_21" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_22" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_23" android:duration="90"/>
+	<item android:drawable="@drawable/ignorev_24" android:duration="90"/>
+	</animation-list>

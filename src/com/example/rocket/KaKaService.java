@@ -36,8 +36,9 @@ public class KaKaService extends Service {
 	// 双击的第一次点击时间
 	float startTime = 0;
 	// 随机的动作
-	private int[] kakaActionArray = {R.drawable.kaka_findv_item_list,
-			 R.drawable.kaka_deletef_item_list,  R.drawable.kaka_gally_item_list,R.drawable.kaka_eatwm_item_list };
+	private int[] kakaActionArray = { R.drawable.kaka_findv_item_list, R.drawable.kaka_deletef_item_list,
+			R.drawable.kaka_gally_item_list, R.drawable.kaka_eatwm_item_list, R.drawable.kaka_ignorev_item_list,
+			R.drawable.kaka_killv_item_list };
 	// 定时任务
 	private Timer timer = null;
 	private TimerTask task = null;
@@ -50,7 +51,7 @@ public class KaKaService extends Service {
 			anim = (AnimationDrawable) iv.getBackground();
 			anim.start();
 			mWm.updateViewLayout(mToast, mParams);
-		
+
 		};
 	};
 
@@ -81,7 +82,7 @@ public class KaKaService extends Service {
 		iv = mToast.findViewById(R.id.iv_kaka_item_list);
 
 		handler.sendEmptyMessage(R.drawable.kaka_smog_item_list);
-		//执行完上面的动画切回首页动画
+		// 执行完上面的动画切回首页动画
 		IsStopDrawable();
 
 		// 拖动动画
@@ -144,7 +145,8 @@ public class KaKaService extends Service {
 						SystemClock.sleep(10);
 						startTime = 0;
 						handler.sendEmptyMessage(R.drawable.kaka_dblclk_item_list);
-						//执行完上面的动画切回首页动画
+						// handler.sendEmptyMessage(R.drawable.kaka_killv_item_list);
+						// 执行完上面的动画切回首页动画
 						IsStopDrawable();
 
 					}
@@ -164,17 +166,16 @@ public class KaKaService extends Service {
 				Random rd = new Random();
 				int rdInt = rd.nextInt(actionSize);
 				int action = kakaActionArray[rdInt];
-				handler.sendEmptyMessage(action);
 
-				//判断动画之后到最后一帧的时候切换回stand动画
+				handler.sendEmptyMessage(action);
+				// 判断动画之后到最后一帧的时候切换回stand动画
 				IsStopDrawable();
-				
 				System.gc();
 
 			}
 		};
 
-		// 一分钟后开始执行定时任务，之后每一分钟执行一次
+		// 30秒后开始执行定时任务，之后每30秒执行一次
 		timer.schedule(task, 1000 * 10, 1000 * 10);
 
 	}
@@ -190,7 +191,7 @@ public class KaKaService extends Service {
 			// 隐藏
 			handler.sendEmptyMessage(R.drawable.kaka_vanish_item_list);
 			SystemClock.sleep(100);
-			//判断线程是否执行到最后一张，如果是则执行后面的动画
+			// 判断线程是否执行到最后一张，如果是则执行后面的动画
 			new Thread() {
 				@Override
 				public void run() {
@@ -202,7 +203,7 @@ public class KaKaService extends Service {
 							if (curFrame == anim.getNumberOfFrames() - 1)// 如果已经到了最后一帧
 							{
 								mWm.removeView(mToast);
-								
+
 								return;
 							}
 
@@ -214,15 +215,15 @@ public class KaKaService extends Service {
 				}
 
 			}.start();
-		
+
 		}
 	}
 
 	/**
 	 * 判断是否执行完毕动画，执行完毕之后设置动画为坐下的动画
 	 */
-	public  void IsStopDrawable() {
-		//判断线程是否执行到最后一张，如果是则执行后面的动画
+	public void IsStopDrawable() {
+		// 判断线程是否执行到最后一张，如果是则执行后面的动画
 		new Thread() {
 			@Override
 			public void run() {
@@ -234,7 +235,7 @@ public class KaKaService extends Service {
 						if (curFrame == anim.getNumberOfFrames() - 1)// 如果已经到了最后一帧
 						{
 							handler.sendEmptyMessage(R.drawable.kaka_stand_item_list);
-							
+
 							return;
 						}
 

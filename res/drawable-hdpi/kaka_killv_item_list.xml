@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+     >
+	<item android:drawable="@drawable/killv_1" android:duration="90"/>
+	<item android:drawable="@drawable/killv_2" android:duration="90"/>
+	<item android:drawable="@drawable/killv_3" android:duration="90"/>
+	<item android:drawable="@drawable/killv_4" android:duration="90"/>
+	<item android:drawable="@drawable/killv_5" android:duration="90"/>
+	<item android:drawable="@drawable/killv_6" android:duration="90"/>
+	<item android:drawable="@drawable/killv_7" android:duration="90"/>
+	<item android:drawable="@drawable/killv_8" android:duration="90"/>
+	<item android:drawable="@drawable/killv_9" android:duration="90"/>
+	<item android:drawable="@drawable/killv_10" android:duration="90"/>
+	<item android:drawable="@drawable/killv_11" android:duration="90"/>
+	<item android:drawable="@drawable/killv_12" android:duration="90"/>
+	<item android:drawable="@drawable/killv_13" android:duration="90"/>
+	<item android:drawable="@drawable/killv_14" android:duration="90"/>
+	<item android:drawable="@drawable/killv_15" android:duration="90"/>
+	<item android:drawable="@drawable/killv_16" android:duration="90"/>
+	<item android:drawable="@drawable/killv_17" android:duration="90"/>
+	<item android:drawable="@drawable/killv_18" android:duration="90"/>
+	<item android:drawable="@drawable/killv_19" android:duration="90"/>
+	<item android:drawable="@drawable/killv_20" android:duration="90"/>
+	<item android:drawable="@drawable/killv_21" android:duration="90"/>
+	
+</animation-list>
